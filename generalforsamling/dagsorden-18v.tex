@@ -2,10 +2,15 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[norsk]{babel}
+% PDF-relatert
+\usepackage{hyperref,pdfpages,hypcap}
+\hypersetup{colorlinks=true,allcolors=black}
+% Andre pakker
 \usepackage[cm]{fullpage}
 \usepackage{parskip,multicol,textcomp,amssymb,graphicx,color,enumitem}
-\usepackage{pdfpages}
+% - Korreksjon av fotnoter i seksjoner/overskrifter
 \usepackage[stable]{footmisc}
+% - Skrifttype
 \usepackage[bitstream-charter]{mathdesign}
 
 
@@ -20,7 +25,7 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
-\cfoot{Side~\thepage\ av~\pageref{lastpage}}
+\cfoot{Side~\thepage\ av~\pageref*{lastpage}}
 
 
 \begin{document}
@@ -248,13 +253,17 @@ CYB har 50.~årsjubileum februar 2019, og trenger i den sammenheng frivillige ti
 
 Interesse for deltagelse i arrangeringen kan sendes til \textbf{cyb50@cyb.no}.
 
-
 \part*{Vedlegg}\label{lastpage}
 \addcontentsline{toc}{part}{Vedlegg}
 
 \newpage
-\addcontentsline{toc}{section}{Vedtekter for Cybernetisk Selskab}
+\phantomsection{}
+\addcontentsline{toc}{section}{Vedtekter for Cybernetisk Selskab} % chktex
 \includepdf[pages=-]{cyb-vedtekter.pdf}
+
+% TODO Fjern når ikke relevant
+\phantomsection{}
 \addcontentsline{toc}{section}{Vedtekter for Ifi-foreninger}
 \includepdf[pages=-]{ifi_forening_vedtekter_2017.pdf}
+
 \end{document}
