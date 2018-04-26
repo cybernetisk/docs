@@ -4,7 +4,10 @@
 \usepackage[norsk]{babel}
 % PDF-relatert
 \usepackage{hyperref,pdfpages,hypcap}
-\hypersetup{colorlinks=true,allcolors=black}
+\hypersetup{colorlinks=true,allcolors=.}
+\newcommand\fhref[2]{%
+	\href{#1}{#2}\footnote{\url{#1}}%
+}
 % Andre pakker
 \usepackage[cm]{fullpage}
 \usepackage{parskip,multicol,textcomp,amssymb,graphicx,color,enumitem}
@@ -156,7 +159,7 @@ Et samlet hovedstyre ønsker å legge fram et forslag om å endre stemmemetoden 
 Erstatter \textit{simpelt flertall} med \textit{preferansevalg, jf.~Valgreglement for Universitet i Oslo §13}.
 
 \begin{enumerate}
-	\item[§8 a] Valgbare til alle styrer er alle medlemmer i henhold til §2 og informatikkstudenter ved Universitetet i Oslo. Alle valg avgjøres ved \textcolor{red}{preferansevalg, jf.~Valgreglement for Universitet i Oslo §13}.
+	\item[§8 a] Valgbare til alle styrer er alle medlemmer i henhold til §2 og informatikkstudenter ved Universitetet i Oslo. Alle valg avgjøres ved \textcolor{red}{preferansevalg, jf.~\fhref{https://www.uio.no/om/regelverk/orgadm/valgreglement.html\#vedlegg-2}{Valgreglement for Universitet i Oslo §13}}.
 \end{enumerate}
 
 \subsection{Forslag til umiddelbar ikrafttredelse}
