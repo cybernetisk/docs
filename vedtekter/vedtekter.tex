@@ -15,14 +15,16 @@
 	denominator-bot-sep = -1pt,
 }
 
+\makeatletter
 % Redefines sections in the format §1 ...
 \renewcommand{\thesection}{§\arabic{section}}
 % Redefines the first level of enumerated lists.
-\renewcommand{\theenumi}{\alph{enumi})}
-\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\renewcommand{\p@enumi}{\thesection~\theenumii}
 
 \title{\textbf{Cybernetisk Selskabs vedtekter} \\
-	{\large Oppdatert etter generalforsamlingen 10.11.2016*\thanks{* Oppdatert med rettskriving april 2017.}.}}
+	{\large Oppdatert etter generalforsamlingen 2.~mai 2018.}}
 \date{}
 \author{}
 
@@ -67,10 +69,12 @@
 	\item{Hovedstyret er med \sfrac{3}{4} flertall av hovedstyret vedtaksdyktige.}
 	\item{Hovedstyret skal drive Cybernetisk Selskabs virksomhet, og sikre aktivitet og gjennomføring av foreningens formål.}
 	\item{Hovedstyret i Cybernetisk Selskab skal fungere som et sentralt hovedstyre for sine understyrer og arbeidsgrupper.}
-	\item{Hovedstyret skal bestå av fem til ti personer, hvor vervene leder, nestleder, kasserer, kjellermogul og arrangementssjef er faste. Øvrige verv defineres av hovedstyret før generalforsamling.}
+	\item{Hovedstyret skal bestå av fem til ti personer, hvor vervene leder, nestleder, kasserer, kjellermogul og arrangementssjef er faste. Øvrige verv defineres av hovedstyret før generalforsamling.\label{sec:hs-antall}}
 	\item{Hovedstyret konstituerer seg i samråd med lederen på periodens første hovedstyremøte som skal skje senest to måneder etter generalforsamling.}
 	\item{Hovedstyret kan med \sfrac{3}{4} flertall oppnevne hovedstyremedlemmer ved behov for etterfylling av alle verv foruten leder og kjellermogul. Den etterfylte sitter frem til neste generalforsamling.} 
 	\item{Alle medlemmer jf.~\ref{sec:medlemskap} har møterett på hovedstyrets møter, men kun styrets medlemmer har stemmerett.}
+	\item{Hovedstyret skal strebe mot å opprettholde en minimumsandel på \sfrac{2}{3} studenter som enten er tilknyttet et eller flere studieprogrammer ved Institutt ved informatikk, eller som tar ett eller flere IN- eller INF-fag.\label{itm:minimum}}
+	\item{Hvis \ref{itm:minimum} ikke er oppfylt etter en generalforsamling skal hovedstyret drøfte på neste ordinære styremøte om det er nødvendig med en eventuell etterfylling opp mot grensen jf.~\ref{sec:hs-antall}.}
 \end{enumerate}
 
 \section{Kjellerstyret}
@@ -126,5 +130,6 @@
         \item{Hvis en generalforsamling vedtar å oppløse foreningen skal hovedstyret tidligst tre uker og senest fire måneder senere innkalle til ekstraordinær generalforsamling hvor saken skal behandles på nytt. Innkallingen skal komme minimum to uker før generalforsamlingen finner sted.}
         \item{Dersom foreningen oppløses, går foreningens midler til Fordelingsutvalget (FU) ved Institutt for informatikk (Ifi).}
 \end{enumerate}
+$\blacksquare$
 
 \end{document} % chktex 17
