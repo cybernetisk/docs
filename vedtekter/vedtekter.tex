@@ -5,7 +5,12 @@
 \usepackage{parskip,textcomp,amssymb,fullpage}
 \usepackage[margin=2.5cm,headsep=1cm]{geometry}
 \usepackage[bitstream-charter]{mathdesign}
-
+% PDF-relatert
+\usepackage{hyperref,pdfpages,hypcap}
+\hypersetup{colorlinks=true,allcolors=.}
+\newcommand\fhref[2]{%
+	\href{#1}{#2}\footnote{\url{#1}}%
+}
 % Fractions
 \usepackage{xfrac}
 \DeclareInstance{xfrac}{default}{text}%
@@ -24,7 +29,7 @@
 \renewcommand{\p@enumi}{\thesection~\theenumii}
 
 \title{\textbf{Cybernetisk Selskabs vedtekter} \\
-	{\large Oppdatert etter generalforsamlingen 2.~mai 2018.}}
+	{\large Oppdatert etter generalforsamling 2.~mai 2018.}}
 \date{}
 \author{}
 
@@ -110,7 +115,7 @@
 
 \section{Valg}\label{sec:valg}
 \begin{enumerate}
-	\item{Valgbare til alle styrer er alle medlemmer jf.~\ref{sec:medlemskap} og informatikkstudenter ved Universitetet i Oslo. Alle valg avgjøres ved simpelt flertall.}
+	\item{Valgbare til alle styrer er alle medlemmer jf.~\ref{sec:medlemskap} og informatikkstudenter ved Universitetet i Oslo. Alle valg avgjøres ved preferansevalg, jf.~\fhref{https://www.uio.no/om/regelverk/orgadm/valgreglement.html\#vedlegg-2}{§13 i Valgreglement for Universitet i Oslo}.}
 	\item{Hvert hovedstyremedlem velges for to semestre av gangen. Valg foregår på generalforsamling.}
 	\item{Alle hovedstyrets medlemmer velges særskilt på generalforsamling.}
 	\item{Alle kjellerstyrets medlemmer velges særskilt på generalforsamling. Verv utover kjellermogul og økonomiansvarlig velges for ett semester av gangen. Kjellermogul og økonomiansvarlig velges for to semestre av gangen. }
