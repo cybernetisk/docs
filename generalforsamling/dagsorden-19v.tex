@@ -1,0 +1,147 @@
+\documentclass[10pt,norsk,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[norsk]{babel}
+% - PDF-relatert
+\usepackage{hyperref,pdfpages,hypcap}
+\hypersetup{colorlinks=true,allcolors=.}
+\newcommand\fhref[2]{%
+	\href{#1}{#2}\footnote{\url{#1}}%
+}
+% Andre pakker
+\usepackage[cm]{fullpage}
+\usepackage{parskip,multicol,textcomp,amssymb,graphicx,color,enumitem}
+% - Korreksjon av fotnoter i seksjoner/overskrifter
+\usepackage[stable]{footmisc}
+% - Skrifttype
+\usepackage[bitstream-charter]{mathdesign}
+% - Kommentarer
+\usepackage{comment}
+
+
+\title{Generalforsamling \\
+	Våren 2019\\[3cm]
+	\includegraphics[width=0.5\textwidth]{cyb-logo.eps}\\[-.5cm]}
+\date{23.\ mai 2019}
+\author{Cybernetisk Selskab}
+
+% Blank header, samt footer med side x av y
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\cfoot{Side~\thepage\ av~\pageref*{lastpage}}
+
+
+\begin{document}
+
+\maketitle{}
+\newpage
+\tableofcontents
+
+\part*{Agenda}
+
+\section{Valg av møteleder}
+
+\section{Valg av referent}
+
+\section{Valg av protokollunderskrivere}
+
+\section{Valg av tellekorps}
+
+\section{Godkjenning av innkalling}
+
+\section{Godkjenning av dagsorden}
+
+%\newpage
+
+\section{Semesterberetninger}
+\subsection{Semesterberetning ved leder}
+
+Thor has to do this right here!
+
+\subsection{Semesterberetning ved kjellermogul}
+
+Go Go Kjellermogul!
+
+
+%\newpage
+
+\section{Kasserer orienterer}
+\subsection{Regnskapets tilstand}
+Kasserer presenterer regnskapet.
+
+\subsection{Revidert budsjett for våren 2019}
+Kasserer presenterer budsjett.
+
+\subsection{Foreløpig regnskap for høsten 2018}
+Kasserer presenterer foreløpig regnskap.
+
+\section{Kontigentfastsettelse}
+Hovedstyret foreslår å holde medlemskontigenten på kr.~40,-.
+
+\newpage
+
+\section{Forslag til vedtektsendringer}
+% TODO: Legg til etter HS-møte!
+
+\subsection{Endring i forbindelse med antall krevd for ekstraordinær generalforsamling}
+
+Kort om forslaget!
+
+\subsubsection{Endring av paragraf: X}
+\begin{quote}
+	\begin{enumerate}
+		\item[§7h]
+            Hva endres?
+	\end{enumerate}
+\end{quote}
+
+
+\newpage
+
+\section{Valg}
+
+\begin{minipage}[t]{0.49\textwidth}
+\subsection{Hovedstyret}
+Man velges inn i hovedstyret for ett år av gangen.
+
+\subsubsection{Leder}
+\subsubsection{Nestleder}
+\subsubsection{Arrangementssjef}
+\subsubsection{Rekrutteringsansvarlig}
+\subsubsection{Internansvarlig}
+
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth}
+\subsection{Kjellerstyret} %TODO Oppdater listen med verv
+Alle verv som er til valg i kjellerstyret gjelder for ett semester av gangen. Med unntak av Økonomiansvarlig som blir valgt inn for to semester.
+
+\subsubsection{Innkjøpsansvarlig}
+\subsubsection{Barsjef}
+\subsubsection{Kafésjef}
+\subsubsection{Teknisk ansvarlig}
+\subsubsection{DJ-sjef}
+\subsubsection{Utlånsansvarlig}
+\subsubsection{Arrangementskoordinator}
+
+\end{minipage}
+
+\newpage
+
+% \section{Æresmedlemskap}
+
+\section{Utdeling av pins}
+
+Arkivar deler ut pins.
+
+
+\part*{Vedlegg}\label{lastpage}
+\addcontentsline{toc}{part}{Vedlegg}
+
+\newpage
+\phantomsection{}
+\addcontentsline{toc}{section}{Vedtekter for Cybernetisk Selskab} % chktex
+\includepdf[pages=-]{../vedtekter/vedtekter.pdf}
+
+\end{document}
