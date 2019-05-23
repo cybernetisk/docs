@@ -10,7 +10,7 @@
 }
 % Andre pakker
 \usepackage[cm]{fullpage}
-\usepackage{parskip,multicol,textcomp,amssymb,graphicx,color,enumitem}
+\usepackage{parskip,multicol,textcomp,amssymb,graphicx,color,enumitem,cleveref}
 % - Korreksjon av fotnoter i seksjoner/overskrifter
 \usepackage[stable]{footmisc}
 % - Skrifttype
@@ -211,71 +211,105 @@ Alle verv som er til valg i kjellerstyret gjelder for ett semester av gangen. Me
 \section{Vedtektsforslag}
 
 \subsection{Personlig oppmøte eller mulighet for fullmakt}
-Fra Nikolas Papaioannou
+
+Det foreslås at det først stemmes over hvorvidt man skal behandle \cref{sec:no-full} eller \cref{sec:full}. 
+
+\begin{enumerate}
+	\item Dersom \cref{sec:no-full} velges, stemmes det over.
+		\begin{itemize}
+			\item Går deretter videre til \cref{item:vote}.
+		\end{itemize}
+	\item Dersom \cref{sec:full} velges, stemmes det over.
+		\begin{itemize}
+			\item Dersom \cref{sec:full} vedtas, stemmer man over \cref{sec:begrenset_full} om begrensning i fullmaktssaker.
+			\item Går deretter videre til \cref{item:vote}.
+		\end{itemize}
+	\item Det stemmes over \cref{sec:avstemning} om tydeliggjøring rundt skriftlig avstemning.\label{item:vote}
+\end{enumerate}
 
 \subsubsection{Alt. 1: personlig oppmøte kreves for å kunne avgi enhver stemme:
-               nytt punkt under §7 eller tillegg til punkt §7g}
+               nytt punkt under §7 eller tillegg til punkt §7g\label{sec:no-full}}
+\begin{quote}
+	Forslaget eliminerer muligheten for å avgi fullmakt til en annen person for å stemme.\\
+	--- \emph{Nikolas Papaioannou}
+\end{quote}
 
-Forslaget eliminerer muligheten for å avgi fullmakt til en annen person for å stemme.
+Hovedstyret \emph{støtter ikke} dette endringsforslaget.
 
-\textbf{Nytt punkt under: §7}
+Det foreligger \emph{to forskjellige implementasjonsforslag} for samme ordlyd.
+
+\textbf{Alt. 1: nytt punkt under §7}
 \begin{quote}
 	\begin{enumerate}
-		\item[§7k] Man må være personlig oppmøtt på generalformalingen for å kunne avgi stemme
+		\item[§7k] Man må være personlig oppmøtt på generalforsamlingen for å kunne avgi stemme.
 	\end{enumerate}
 \end{quote}
 
-\textbf{Pålegg: §7g}
+\textbf{Alt. 2: endring av §7g}
 \begin{quote}
     \begin{enumerate}
         \item[§7g] Stemmerett har alle som er medlem, jf. §2, minst én uke før generalforsamling,
-                  \textcolor{green}{og har møtt opp personlig på  generalforsamling}.
+                  \textcolor{green}{og som personlig møter opp på generalforsamling}.
     \end{enumerate}
 \end{quote}
 
-Hovedstyret støtter ikke forslaget
+\subsubsection{Alt. 2.1: opptil én fullmakt kan avgis per person: to nye punkter under §7\label{sec:full}}
+
+\begin{quote}
+	Forslaget fastsetter muligheten og kravene for å avgi stemmer via fullmakt,
+	og begrenser det til én fullmakt per hver stemmeberettigede til stede.
+	Åpne for at hver oppmøtte kan maksimalt ha en fullmakt fra en annen person.
+	Dette gjør at hvis man faktisk har en grunn til å ikke komme er det enda mulig å fikse med noe.\\
+	--- \emph{Nikolas Papaioannou}
+\end{quote}
+
+Hovedstyret \emph{støtter} dette endringsforslaget.
+
+\textbf{Nytt punkt under §7}
 
 
-\subsubsection{Alt. 2: opptil én fullmakt kan avgis per person: to nye punkter under §7}
-
-Forslaget fastsetter muligheten og kravene for å avgi stemmer via fullmakt,
-og begrenser det til én fullmakt per hver stemmeberettigede til stede.
-
-Åpne for at hver oppmøtte kan maksimalt ha en fullmakt fra en annen person.
-Dette gjør at hvis man faktisk har en grunn til å ikke komme er det enda mulig å fikse med noe.
-
-\textbf{Nytt punkt: §7k}
 \begin{quote}
     \begin{enumerate}
         \item[§7k]
             Hver stemmeberettigede tilstede på generalforsamling kan stille med
-            stemmefullmakt for én annen  stemmeberettig.
+            stemmefullmakt for én annen stemmeberettiget.
 
             Fullmakten må inneholde følgene punkter:
             \begin{itemize}
                 \item Navn på hvem fullmakten er gitt til
                 \item Navn på den som gir fullmakten
                 \item Dato for generalforsamling
-                \item Signaturer fra begge parter involvert.
+                \item Signaturer fra begge parter involvert
             \end{itemize}
     \end{enumerate}
 \end{quote}
 
-Enda ett punkt som kan følge hvis punkt over går gjennom:
+\subsubsection{Alt. 2.2: begrensning av fullmaktsmulighet\label{sec:begrenset_full}}
+\begin{quote}
+	Enda ett punkt som kan følge hvis punkt over går gjennom:\\
+	--- \emph{Nikolas Papaioannou}
+\end{quote}
+Hovedstyret \emph{støtter ikke} dette endringsforslaget.
 
-\textbf{Nytt punkt under: §7l}
+\textbf{Nytt punkt under §7}
 \begin{quote}
     \begin{enumerate}
-        \item[§7l] Fullmakter gjelder kun ved vedtektsaker og ikke valg av styremedlemmer
+        \item[§7l] Fullmakter gjelder kun ved vedtektssaker og ikke valg av styremedlemmer.
     \end{enumerate}
 \end{quote}
 
-Hovedstyret støtter §7k, og støtter ikke §7l.
+\newpage
 
-\subsection{Tydeliggjøring av mulighet for skriftlig avstemning}
-Fra Nikolas Papaioannou
+\subsection{Tydeliggjøring av mulighet for skriftlig avstemning}%
+\label{sec:avstemning}
 
-Etter den pinlige runden med diskusjon om en viss avstemming har rett til å være lukket ønsker jeg å forandre på §7e.
+\begin{quote}
+	Etter den pinlige runden med diskusjon om en viss avstemming har rett til å være lukket ønsker jeg å forandre på §7e. \\
+	--- \emph{Nikolas Papaioannou}
+\end{quote}
+
+Hovedstyret \emph{er avholdende} vedrørende dette endringsforslaget.
+
 \textbf{Endring av §7e}
 \begin{quote}
     \begin{enumerate}
@@ -286,6 +320,7 @@ Etter den pinlige runden med diskusjon om en viss avstemming har rett til å væ
         to av de stemmeberettigedeønsker skriftlig avstemming.
     \end{enumerate}
 \end{quote}
+
 
 \newpage
 
