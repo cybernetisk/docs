@@ -4,4 +4,4 @@ Siden inneholder dokumenter tilknyttet Cybernetisk Selskab som ønskes holdt und
 
 - Vedtekter
 - Generalforsamlingens dagsorden
-
+- Protokoll fra de forskjellige generalforsamlingene
